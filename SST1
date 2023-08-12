@@ -1,6 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+<style>
+.parentContainer {
+position: relative;
+text-align: center;
+color: dark black;
+font-size: 100px;
+}
+
+.centered {
+position: absolute;
+top: 50%;
+left: 50%;
+}
+/* CSS Variables */
+:root {
+  --font-family: "Roboto", sans-serf;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color: #fcfcfc;
+  --primary-color: #4756df;
+  --secondary-color: #ff7235;
+  --primary-shadow: #8b8eaf;
+  --secondary-shadow: #a17a69;
+  --bottom-margin: 0.5rem;
+  --bottom-margin-2: 1rem;
+  --line-height: 1.7rem;
+  --transition: 0.3s;
+}
+/* Variables end */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* CSS Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 3.5rem;
+  background-color: var(--bg-color);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav h1 {
+  color: var(--primary-color);
+}
+
+nav a {
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+nav a:hover {
+  color: var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+nav ul {
+  display: flex;
+  gap: 1.9rem;
+}
+
+nav ul li {
+  font-weight: var(--bold-font);
+}
+
+</style>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,57 +103,37 @@
     <!--CSS Styles -->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/icons/apple-touch-icon.png"
     />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/icons/favicon-32x32.png"
-    />
-
-    <!-- Animate CSS CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <title>Jane Doe | Web Developer</title>
+    <title>Lakshmitra | Your own Finance Friend </title>
   </head>
 
   <body>
     <!-- Navbar -->
-
-    <!-- Hero Section -->
-
-    <!-- More about -->
-
-    <!-- Skills section -->
-
-    <!-- Projects section -->
-
-    <!-- Contact section -->
-
-    <!-- Social accounts - Fixed to the right -->
-
-    <!-- Scroll to top -->
-
-    <!-- Footer section -->
-
-    <!-- Website scripts -->
-    <script src="assets/js/app.js"></script>
-
-    <!-- Ion icons scripts -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+ <nav>
+      <h1>Lakshmitra</h1>
+      <ul class="navigation">
+        <li><a href="#Home" class="nav-link">Home</a></li>
+        <li><a href="#Services" class="nav-link">Services</a></li>
+        <li><a href="#Testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#About us" class="nav-link">About us</a></li>
+        <li><a href="#Contact" class="nav-link">Contact</a></li>
+      </ul>
+ </nav>
+  <section class="hero" id="about">
+   <div class="parentContainer">
+   <img src="https://cdn.pixabay.com/photo/2018/04/24/14/07/family-3347049_1280.jpg" alt="Landscape"
+   width ="1840"
+   height = "600">
+   <div class="centered">LAKSHMITRA</div>
+   </div>
+      <div class="Opening text">
+        <h1 class="text">
+        Trust us with your money, and see it grow.
+        </h1>
+      </div>
+</section>
+<footer>
+<p> 2023 Financial Solutions Platform | All rights reserved.</p>
+</footer>
   </body>
 </html>
